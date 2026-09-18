@@ -1,0 +1,198 @@
+{
+  "features": [
+    "rpm",
+    "engine_temp",
+    "oil_temp",
+    "oil_pressure",
+    "fuel_flow",
+    "manifold_pressure",
+    "exhaust_gas_temp",
+    "vibration",
+    "engine_load",
+    "temperature_rate",
+    "vibration_rate",
+    "oil_pressure_rate",
+    "residual_engine_temp",
+    "residual_oil_pressure",
+    "residual_vibration",
+    "residual_exhaust_gas_temp",
+    "composite_residual_norm"
+  ],
+  "classes": [
+    "BEARING_DEGRADATION",
+    "FUEL_SYSTEM_ANOMALY",
+    "MISFIRE",
+    "NORMAL",
+    "OIL_PRESSURE_FAILURE",
+    "OVERHEATING",
+    "SENSOR_DRIFT",
+    "VIBRATION_ANOMALY"
+  ],
+  "accuracy": 1.0,
+  "total_training_samples": 9600,
+  "total_test_samples": 2400,
+  "feature_importances": {
+    "rpm": 0.0033,
+    "engine_temp": 0.062,
+    "oil_temp": 0.0561,
+    "oil_pressure": 0.0949,
+    "fuel_flow": 0.005,
+    "manifold_pressure": 0.0009,
+    "exhaust_gas_temp": 0.0751,
+    "vibration": 0.0962,
+    "engine_load": 0.0015,
+    "temperature_rate": 0.0058,
+    "vibration_rate": 0.0,
+    "oil_pressure_rate": 0.0013,
+    "residual_engine_temp": 0.1845,
+    "residual_oil_pressure": 0.1012,
+    "residual_vibration": 0.1112,
+    "residual_exhaust_gas_temp": 0.0829,
+    "composite_residual_norm": 0.1182
+  },
+  "class_metrics": {
+    "BEARING_DEGRADATION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "FUEL_SYSTEM_ANOMALY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "MISFIRE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "NORMAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "OIL_PRESSURE_FAILURE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "OVERHEATING": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "SENSOR_DRIFT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    },
+    "VIBRATION_ANOMALY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 300
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "BEARING_DEGRADATION",
+      "FUEL_SYSTEM_ANOMALY",
+      "MISFIRE",
+      "NORMAL",
+      "OIL_PRESSURE_FAILURE",
+      "OVERHEATING",
+      "SENSOR_DRIFT",
+      "VIBRATION_ANOMALY"
+    ],
+    "matrix": [
+      [
+        300,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        300,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        300,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        300,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        300,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        300,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        300,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        300
+      ]
+    ]
+  },
+  "model_version": "DRDO-26054-V2.0-PROD"
+}

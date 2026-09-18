@@ -1,46 +1,47 @@
-# ─── Python ───────────────────────────────────────────────
+# Dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
 __pycache__/
+*/__pycache__/
+*/*/__pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-dist/
-*.egg-info/
-.eggs/
-.venv/
-venv/
 env/
-*.egg
+venv/
+ENV/
+.venv/
 
-# ─── Environment ─────────────────────────────────────────
-.env
-*.env.local
-
-# ─── Node / Frontend ─────────────────────────────────────
-node_modules/
+# Build outputs
+frontend/dist/
+frontend/build/
 dist/
-.next/
-.vite/
+build/
+*.egg-info/
 
-# ─── ML artefacts ────────────────────────────────────────
-ml/models/*.pkl
-ml/models/*.onnx
-ml/models/*.pt
-ml/data/*.csv
-ml/data/*.parquet
+# Databases & Runtime Data
+*.db
+*.sqlite3
+*.sqlite
+data/*.db
+!data/.gitkeep
 
-# ─── IDE / OS ────────────────────────────────────────────
-.DS_Store
-.idea/
+# Generated Reports
+reports/*.pdf
+!reports/.gitkeep
+
+# IDEs & Editors
 .vscode/
+.idea/
 *.swp
 *.swo
-Thumbs.db
+.DS_Store
 
-# ─── Docker ──────────────────────────────────────────────
-docker-compose.override.yml
-
-# ─── Logs ────────────────────────────────────────────────
+# Logs
 *.log
-logs/
